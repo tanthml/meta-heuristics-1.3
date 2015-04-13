@@ -35,15 +35,15 @@ mtspGenne& mtspGenne::operator = (unsigned int value)
 
 mtspGenne& mtspGenne::operator = (const edaGenne &genne) 
 {
-     mtspGenne& city = (mtspGenne&) genne;
-     _value = city._value;
+     mtspGenne& stop = (mtspGenne&) genne;
+     _value = stop._value;
      return *this;
 }
 
 bool mtspGenne::operator == (const edaGenne &genne) const
 {
-    const mtspGenne& city = (mtspGenne&) genne; 
-    return _value == city._value;
+    const mtspGenne& stop = (mtspGenne&) genne; 
+    return _value == stop._value;
 }
 
 mtspGenne* mtspGenne::clone() const

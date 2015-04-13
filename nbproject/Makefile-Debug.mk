@@ -40,8 +40,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/mtsp/lib/mtspGenne.o \
 	${OBJECTDIR}/mtsp/lib/mtspProblem.o \
 	${OBJECTDIR}/mtsp/lib/mtspSolution.o \
-	${OBJECTDIR}/mtsp/mtspStop.o \
-	${OBJECTDIR}/mtsp/mtspTest.o \
+	${OBJECTDIR}/mtsp/mtspMain.o \
 	${OBJECTDIR}/tsp/lib/tsp2Opt.o \
 	${OBJECTDIR}/tsp/lib/tspGenne.o \
 	${OBJECTDIR}/tsp/lib/tspInsertion.o \
@@ -98,15 +97,10 @@ ${OBJECTDIR}/mtsp/lib/mtspSolution.o: mtsp/lib/mtspSolution.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mtsp/lib/mtspSolution.o mtsp/lib/mtspSolution.cpp
 
-${OBJECTDIR}/mtsp/mtspStop.o: mtsp/mtspStop.cpp 
+${OBJECTDIR}/mtsp/mtspMain.o: mtsp/mtspMain.cpp 
 	${MKDIR} -p ${OBJECTDIR}/mtsp
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mtsp/mtspStop.o mtsp/mtspStop.cpp
-
-${OBJECTDIR}/mtsp/mtspTest.o: mtsp/mtspTest.cpp 
-	${MKDIR} -p ${OBJECTDIR}/mtsp
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mtsp/mtspTest.o mtsp/mtspTest.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mtsp/mtspMain.o mtsp/mtspMain.cpp
 
 ${OBJECTDIR}/tsp/lib/tsp2Opt.o: tsp/lib/tsp2Opt.cpp 
 	${MKDIR} -p ${OBJECTDIR}/tsp/lib

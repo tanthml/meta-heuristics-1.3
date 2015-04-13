@@ -47,8 +47,9 @@
 #define _CLSID_EDARATEADAPT_                  57
 #define _CLSID_EDASTATICTABU_                 58
 #define _CLSID_EDARANKSELECTION_              59
-#define _CLSID_EDAPMCROSSOVER_                60
-#define _CLSID_EDARANDSWAPMUTATION_           61
+#define _CLSID_EDAWEIGHTSELECTION_            60
+#define _CLSID_EDAPMCROSSOVER_                61
+#define _CLSID_EDARANDSWAPMUTATION_           62
 
 #define _CLSID_EDAHC_                         20
 #define _CLSID_EDASA_                         21

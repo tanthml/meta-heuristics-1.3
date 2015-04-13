@@ -24,7 +24,6 @@ public:
     void set(const edaProblem& pro);
     void set(const double fitness);
     void update();
-    bool load(const char* filename);
     const mtspProblem& pro() const;
     unsigned int& at(unsigned int index);
     const unsigned int at(unsigned int index) const;
@@ -32,7 +31,8 @@ public:
     unsigned int depot() const;
     void easer();
     mtspSolution* clone() const;
-    void print(ostream& os) const;    
+    void print(ostream& os) const;  
+    void info(ostream& os) const;
     void init();   
     double evaluate();
     void decode(const edaChromosome& chro);

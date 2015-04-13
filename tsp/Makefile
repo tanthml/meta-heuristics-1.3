@@ -1,13 +1,12 @@
 CXX = mpic++
-OBJSPATH = ../OBJ/
-RUNPATH = ../RUN
+OBJSPATH = ../objs/
+RUNPATH = ../run
 CXXFLAGS = -Wall -D_DEBUG=0 -O -g
 MPIFLAGS = -Wall -D_DEBUG=0 -O -g -DCOMM_MPI
 LDFLAGS = -O -g -L${OBJSPATH} -ltsp -lmetasearch
 
 SOURCES = 	tsp2Opt.cpp\
 			tspInsertion.cpp\
-			tspSolution.cpp\
 			tspSolution.cpp\
 			tspGenne.cpp\
 			tspSolution.cpp\
@@ -107,4 +106,4 @@ tspMPI04Search:${OBJSPATH}$(tspWF04SearchSource:.cpp=.obj) ${OBJSPATH}libtsp.a
 clean:
 	@rm -rf ${OBJS} *~ libtsp.a
 	@rm -rf ${OBJSPATH}tsp*.o ${OBJSPATH}tsp*.obj ${OBJSPATH}*~ ${OBJSPATH}libtsp.a 
-	@rm -f ../RUN/tsp*Search*
+	@rm -f ../run/tsp*Search*

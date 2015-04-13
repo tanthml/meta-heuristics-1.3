@@ -70,6 +70,7 @@
       <itemPath>eda/edaTimeCondition.h</itemPath>
       <itemPath>eda/edaTimer.h</itemPath>
       <itemPath>eda/edaVarFitCondition.h</itemPath>
+      <itemPath>eda/edaWeightSelection.h</itemPath>
       <itemPath>eda/edaWorkflow.h</itemPath>
     </logicalFolder>
     <logicalFolder name="mtsp" displayName="mtsp" projectFiles="true">
@@ -77,7 +78,6 @@
         <itemPath>mtsp/brench/hcm.tsp</itemPath>
       </logicalFolder>
       <logicalFolder name="lib" displayName="lib" projectFiles="true">
-        <itemPath>mtsp/lib/Makefile</itemPath>
         <itemPath>mtsp/lib/mtsp2Opt.cpp</itemPath>
         <itemPath>mtsp/lib/mtsp2Opt.h</itemPath>
         <itemPath>mtsp/lib/mtspDefine.h</itemPath>
@@ -89,11 +89,9 @@
         <itemPath>mtsp/lib/mtspProblem.h</itemPath>
         <itemPath>mtsp/lib/mtspSolution.cpp</itemPath>
         <itemPath>mtsp/lib/mtspSolution.h</itemPath>
-        <itemPath>mtsp/mtspStop.cpp</itemPath>
-        <itemPath>mtsp/mtspStop.h</itemPath>
       </logicalFolder>
+      <itemPath>mtsp/Makefile</itemPath>
       <itemPath>mtsp/mtspMain.cpp</itemPath>
-      <itemPath>mtsp/mtspTest.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="tsp" displayName="tsp" projectFiles="true">
       <logicalFolder name="brench" displayName="brench" projectFiles="true">
@@ -301,11 +299,13 @@
       </item>
       <item path="eda/edaVarFitCondition.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="eda/edaWeightSelection.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="eda/edaWorkflow.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="mtsp/brench/hcm.tsp" ex="false" tool="3" flavor2="0">
+      <item path="mtsp/Makefile" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="mtsp/lib/Makefile" ex="false" tool="3" flavor2="0">
+      <item path="mtsp/brench/hcm.tsp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="mtsp/lib/mtsp2Opt.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -329,11 +329,7 @@
       </item>
       <item path="mtsp/lib/mtspSolution.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="mtsp/mtspStop.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="mtsp/mtspStop.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="mtsp/mtspTest.cpp" ex="false" tool="1" flavor2="0">
+      <item path="mtsp/mtspMain.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tsp/brench/ali535.tsp" ex="false" tool="3" flavor2="0">
       </item>
@@ -538,11 +534,13 @@
       </item>
       <item path="eda/edaVarFitCondition.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="eda/edaWeightSelection.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="eda/edaWorkflow.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="mtsp/brench/hcm.tsp" ex="false" tool="3" flavor2="0">
+      <item path="mtsp/Makefile" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="mtsp/lib/Makefile" ex="false" tool="3" flavor2="0">
+      <item path="mtsp/brench/hcm.tsp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="mtsp/lib/mtsp2Opt.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -567,12 +565,6 @@
       <item path="mtsp/lib/mtspSolution.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="mtsp/mtspMain.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="mtsp/mtspStop.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="mtsp/mtspStop.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="mtsp/mtspTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tsp/brench/ali535.tsp" ex="false" tool="3" flavor2="0">
       </item>

@@ -140,25 +140,34 @@ mtspSolution* mtspSolution::clone() const {
     sol->_fitness = _fitness;
     return sol;
 }
-
 void mtspSolution::print(ostream& os) const {
+    checkError();
+    unsigned int _depot = depot();
+    for (unsigned int i = 0; i < _size; i++) {
+        os << _route[(_depot + i) % _size] << " ";
+    }
+}
+void mtspSolution::info(ostream& os) const {
     checkError();
 
     unsigned int _depot = depot();
 
     os << "ID " << "\t" << "Come" << "\t" << "Wait" << "\t" << "Late"
-            << "\t" << "[" << "\t" << "]" << "\t" << "Move" << endl;
+           << "\t" << "Move" << "\t" << "EARLY" << "\t" << "LATE" << endl;
     os << _route[_depot] << "\t" << _graph->early(_route[_depot]) << "\t" << 0
-            << "\t" << 0 << "\t" << _graph->early(_route[_depot])
-            << "\t" << _graph->late(_route[_depot]) << "\t"
-            << _graph->time(_route[_depot], _route[(_depot + 1)%_size]) << endl;
+            << "\t" << 0 << "\t" << _graph->time(_route[_depot], _route[(_depot + 1)%_size])
+            << "\t" << _graph->early(_route[_depot])
+            << "\t" << _graph->late(_route[_depot])  << endl;
 
     for (unsigned int i = 1; i <= _size; i++) {
         unsigned int here = (_depot + i) % _size;
-        unsigned int next = (_depot + i + 1) % _size;
-        os << _route[here] << "\t" << _come[_route[here]] << "\t" << _wait[_route[here]]
-                << "\t" << _late[_route[here]] << "\t" << _graph->early(_route[here])
-                << "\t" << _graph->late(_route[here]) << "\t" << _move[_route[here]] << endl;
+        os << _route[here] 
+                << "\t" << _come[_route[here]] 
+                << "\t" << _wait[_route[here]]
+                << "\t" << _late[_route[here]] 
+                << "\t" << _move[_route[here]] 
+                << "\t" << _graph->early(_route[here]) 
+                << "\t" << _graph->late(_route[here])  << endl;
     }
 
     //    os << _route[0];
@@ -295,29 +304,6 @@ void mtspSolution::serialize(edaBuffer& buf, bool pack) {
     }
 }
 
-bool mtspSolution::load(const char* filename) {
-    //    graphError();
-    //    
-    //    ifstream file(filename);
-    //    if( file ) 
-    //    {  
-    //        unsigned int size = _graph->size();
-    //        for (unsigned int i = 0; i < size; i++) 
-    //        {
-    //            file >> at(i);
-    //        }
-    //        file.close();
-    //        set(NAN);
-    //    }
-    //    else
-    //    {
-    //        string error = "The file name '";
-    //        error += filename;
-    //        error += "' is not existing !";
-    //        throw edaException( this , error );
-    //    }
-    //    return false;
-}
 
 bool mtspSolution::operator==(const edaSolution& sol) const {
     const mtspSolution& route = (mtspSolution&) sol;

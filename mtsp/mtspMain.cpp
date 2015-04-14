@@ -18,7 +18,8 @@ static edaSeqWorkflow workflow;
 #endif
 
 int main(int argc, char** argv) {
-    EDAMetasearchStart(argc, argv);
+
+EDAMetasearchStart(argc, argv);
     if (argc < 6) {
         std::cerr << "Usage : ./" << __progname
                 << " [Problem] [HC] [Best/First] [NumLoop] [NumPop] [Config]\n"

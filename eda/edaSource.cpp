@@ -6,10 +6,13 @@
 #include "edaEliteCollect.h"
 #include "edaIDCollect.h"
 
+#if COMM_MPI
 #include "edaMpiWorkflow.h"
 #include "edaMpiWorker.h"
+#else
 #include "edaSeqWorkflow.h"
 #include "edaSeqWorker.h"
+#endif
 
 #include "edaLoopCondition.h"
 #include "edaTimeCondition.h"

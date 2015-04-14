@@ -1,4 +1,4 @@
-CXX = mpic++
+CXX = g++
 OBJSPATH = ../objs/
 CXXFLAGS = -D_DEBUG=0 -Wall -O -g
 SOURCES= edaSource.cpp

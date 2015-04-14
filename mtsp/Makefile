@@ -1,4 +1,4 @@
-CXX = mpic++
+CXX = g++
 OBJSPATH = ../objs/
 LIBPATH = ./lib/
 RUNPATH = ../run

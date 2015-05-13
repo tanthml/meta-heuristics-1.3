@@ -52,6 +52,7 @@
       <itemPath>eda/edaRandSwapMutation.h</itemPath>
       <itemPath>eda/edaRankSelection.h</itemPath>
       <itemPath>eda/edaRateAdapt.h</itemPath>
+      <itemPath>eda/edaRouletteWheelSelection.h</itemPath>
       <itemPath>eda/edaSA.h</itemPath>
       <itemPath>eda/edaSAExplorer.h</itemPath>
       <itemPath>eda/edaSearch.h</itemPath>
@@ -70,7 +71,6 @@
       <itemPath>eda/edaTimeCondition.h</itemPath>
       <itemPath>eda/edaTimer.h</itemPath>
       <itemPath>eda/edaVarFitCondition.h</itemPath>
-      <itemPath>eda/edaWeightSelection.h</itemPath>
       <itemPath>eda/edaWorkflow.h</itemPath>
     </logicalFolder>
     <logicalFolder name="mtsp" displayName="mtsp" projectFiles="true">
@@ -263,6 +263,8 @@
       </item>
       <item path="eda/edaRateAdapt.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="eda/edaRouletteWheelSelection.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="eda/edaSA.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="eda/edaSAExplorer.h" ex="false" tool="3" flavor2="0">
@@ -298,8 +300,6 @@
       <item path="eda/edaTimer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="eda/edaVarFitCondition.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="eda/edaWeightSelection.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="eda/edaWorkflow.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -498,6 +498,8 @@
       </item>
       <item path="eda/edaRateAdapt.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="eda/edaRouletteWheelSelection.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="eda/edaSA.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="eda/edaSAExplorer.h" ex="false" tool="3" flavor2="0">
@@ -533,8 +535,6 @@
       <item path="eda/edaTimer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="eda/edaVarFitCondition.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="eda/edaWeightSelection.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="eda/edaWorkflow.h" ex="false" tool="3" flavor2="0">
       </item>

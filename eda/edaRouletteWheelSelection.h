@@ -5,22 +5,22 @@
  * Created on April 22, 2014, 3:51 PM
  */
 
-#ifndef EDAWEIGHTSELECTION_H
-#define	EDAWEIGHTSELECTION_H
+#ifndef EDAROULETTESELECTION_H
+#define	EDAROULETTESELECTION_H
 
 #include "edaNaturalSelection.h"
 
 
-class edaWeightSelection : public edaNaturalSelection 
+class edaRouletteWheelSelection : public edaNaturalSelection 
 {
 public:
 
-    edaWeightSelection(double rate = 0.5) : _weight(NULL)
+    edaRouletteWheelSelection(double rate = 0.5) : _weight(NULL)
     {
         set(rate);
     }
     
-    virtual ~edaWeightSelection()
+    virtual ~edaRouletteWheelSelection()
     {        
         easer();
     }
@@ -89,9 +89,9 @@ public:
         }
     }
 
-    virtual edaWeightSelection* clone() const
+    virtual edaRouletteWheelSelection* clone() const
     {
-        edaWeightSelection* slect = new edaWeightSelection();
+        edaRouletteWheelSelection* slect = new edaRouletteWheelSelection();
         slect->_rate = _rate;
         slect->_weight = NULL;
         return slect;
@@ -103,7 +103,7 @@ public:
         easerArray(_weight);
     }
     
-    setClassID(_SYSCLASSID_ + _CLSID_EDAWEIGHTSELECTION_);
+    setClassID(_SYSCLASSID_ + _CLSID_EDAROULETTESELECTION_);
     
 
     virtual const char* className() const
